@@ -1,6 +1,8 @@
-# OHS: Ontology of Human Suicide
+# SUIO: Suicide Ontology
 
-The Ontology of Human Suicide (OHS) was initiated in 2015 when Dr. Xiaofu Pan and Dr. Shunzhou Deng were visiting scholars in the University of Michigan and working with Dr. Oliver He there. The work was idled for many years. The OHS development has resumed since 2025.
+Previously named as the Ontology of Human Suicide (OHS), the Suicide Ontology (SUIO) is a biomedical ontology in the domain of sucide.
+
+The Ontology of Human Suicide (OHS) was initiated in 2015 when Dr. Xiaofu Pan and Dr. Shunzhou Deng were visiting scholars in the University of Michigan and working with Dr. Oliver He there. The work was idled for many years. We have resume the suicide ontology development since 2025, and officially changed the name to SUIO: Ontology of Human Suicide on April 28, 2026. 
 
 Now the OHS research has become part of the NIH-funded PHASES project:  https://github.com/Buffalo-Ontology-Group/phases.  
 
@@ -8,13 +10,14 @@ Now the OHS research has become part of the NIH-funded PHASES project:  https://
 
 **University of Michigan:**'
 
-- Xiaofu Pan
-- Shunzhou Deng
-- Jiahao Wang
+- Yongqun "Oliver" He
 - Jie Zheng
 - Leo Yeh
 - Sam Smith
-- Yongqun "Oliver" He
+- Anthony Huffman
+- Xiaofu Pan
+- Shunzhou Deng
+- Jiahao Wang
 
 **University of Florida:**
 
