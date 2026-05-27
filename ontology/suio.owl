@@ -23,6 +23,11 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/gene-protein.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/gene-sui.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/pheno-gene.owl"/>
+        <dc:creator>Damayanthi (Daughty) Jesudas</dc:creator>
+        <dc:creator>Jie Zheng</dc:creator>
+        <dc:creator>John Beverley</dc:creator>
+        <dc:creator>Leo Yeh</dc:creator>
+        <dc:creator>Sam Smith</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:date xml:lang="en">05-26-2026</dc:date>
         <dc:description xml:lang="en">SUIO is a biomedical ontology in the domain of suicide.</dc:description>
