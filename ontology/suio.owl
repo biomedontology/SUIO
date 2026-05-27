@@ -34,7 +34,7 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Human population health</dc:subject>
         <dc:title xml:lang="en">SUIO: Suicide Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.18</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.21</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -176,6 +176,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>A process that acts intentionally to cause one&apos;s own death.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Jianhao Wang, Xiaofu Pan</obo:IAO_0000117>
+        <obo:IAO_0000118>suicidal behavior</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Suicide</obo:IAO_0000119>
         <rdfs:label xml:lang="en">suicide</rdfs:label>
     </owl:Class>
@@ -201,6 +202,50 @@
         <obo:IAO_0000115>A suicide process that is conducted and achieves its goal of suicide (i.e., the person under suicide is deadline).</obo:IAO_0000115>
         <obo:IAO_0000117>Jiahao Wang, Oliver He</obo:IAO_0000117>
         <rdfs:label>suicide complete</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>suicidal ideation is a process that generates suicidal thoughts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">suicidal ideation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>Suicide prevention refers to the collective efforts, policies, and interventions aimed at reducing the risk of suicide.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">suicide prevention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>Suicide management refers to the clinical and practical strategies used to identify, assess, and treat individuals at risk of suicide.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">suicide management</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>Suicide treatment encompasses a combination of crisis intervention, targeted psychotherapy, and medication aimed at managing suicidal thoughts, reducing distress, and addressing underlying mental health conditions. The primary goal is to ensure immediate safety, build coping skills, and establish long-term reasons for living.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">suicide treatment</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
