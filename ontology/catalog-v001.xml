@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="http://purl.obolibrary.org/obo/ohs.owl" uri="suio.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="http://purl.obolibrary.org/obo/ohs/BFO_import.owl" uri="BFO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="http://purl.obolibrary.org/obo/ohs/HP_import.owl" uri="HP_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="http://purl.obolibrary.org/obo/ohs/OGG_import.owl" uri="OGG_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="http://purl.obolibrary.org/obo/ohs/OGSF_import.owl" uri="OGSF_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="http://purl.obolibrary.org/obo/ohs/PR_import.owl" uri="PR_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="http://purl.obolibrary.org/obo/ohs/RO_import.owl" uri="RO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="http://purl.obolibrary.org/obo/ohs/gene-pheno.owl" uri="gene-pheno.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="http://purl.obolibrary.org/obo/ohs/gene-protein.owl" uri="gene-protein.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="http://purl.obolibrary.org/obo/ohs/gene-sui.owl" uri="gene-sui.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="http://purl.obolibrary.org/obo/ohs/pheno-gene.owl" uri="pheno-gene.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="shadowed:http://purl.obolibrary.org/obo/ohs.owl" uri="OHS%20Archive/ohs-merged.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1779841843811" name="shadowed:http://purl.obolibrary.org/obo/ohs.owl" uri="OHS%20Archive/ohs.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="http://purl.obolibrary.org/obo/ohs.owl" uri="suio.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="http://purl.obolibrary.org/obo/ohs/BFO_import.owl" uri="BFO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="http://purl.obolibrary.org/obo/ohs/HP_import.owl" uri="HP_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="http://purl.obolibrary.org/obo/ohs/OGG_import.owl" uri="OGG_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="http://purl.obolibrary.org/obo/ohs/OGSF_import.owl" uri="OGSF_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="http://purl.obolibrary.org/obo/ohs/PR_import.owl" uri="PR_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="http://purl.obolibrary.org/obo/ohs/RO_import.owl" uri="RO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="http://purl.obolibrary.org/obo/ohs/gene-pheno.owl" uri="gene-pheno.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="http://purl.obolibrary.org/obo/ohs/gene-protein.owl" uri="gene-protein.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="http://purl.obolibrary.org/obo/ohs/gene-sui.owl" uri="gene-sui.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="http://purl.obolibrary.org/obo/ohs/pheno-gene.owl" uri="pheno-gene.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="shadowed:http://purl.obolibrary.org/obo/ohs.owl" uri="OHS%20Archive/ohs-merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1779842480315" name="shadowed:http://purl.obolibrary.org/obo/ohs.owl" uri="OHS%20Archive/ohs.owl"/>
     </group>
 </catalog>
