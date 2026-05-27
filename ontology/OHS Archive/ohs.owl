@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ohs.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ohs.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doid="http://purl.obolibrary.org/obo/doid#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ohs.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/BFO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/HP_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/OGG_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/OGSF_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/PR_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/RO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/gene-pheno.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/gene-protein.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/gene-sui.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ohs/pheno-gene.owl"/>
+        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
+        <dc:date xml:lang="en">03-28-2018</dc:date>
+        <dc:description xml:lang="en">OHS I is a biomedical ontology in the area of human suicide. OHS represents various suicide genes and their associated phenotypes and related information.</dc:description>
+        <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:subject xml:lang="en">Human population health</dc:subject>
+        <dc:title xml:lang="en">OHS: Ontology of Human Suicide</dc:title>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.06</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHS_0000002 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OHS_0000002">
+        <obo:IAO_0000115>An object property that represents a relation between a phenotype and a genetic variation</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Jiahao Wang</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">phenotype susceptible to genetically variation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHS_0000005 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OHS_0000005">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000115>An object property that represents a relation betwen a genetic variation and a phenotype</obo:IAO_0000115>
+        <rdfs:label>genetic variation for susceptibility to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0000256 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0000708"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0000515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000515"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000003 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_0000000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000010 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_0000000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000024 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGG_0000000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGSF_0000000 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGSF_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGSF_0000004 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGSF_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHS_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHS_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process that acts intentionally to cause one&apos;s own death.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Jianhao Wang, Xiaofu Pan</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Suicide</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">suicide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHS_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHS_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHS_0000001"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OHS_0000004"/>
+        <obo:IAO_0000115>A suicide process that is attempted however does not acheive the suicide goal.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jiahao Wang, Oliver He</obo:IAO_0000117>
+        <rdfs:label>suicide attempt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHS_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHS_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OHS_0000001"/>
+        <obo:IAO_0000115>A suicide process that is conducted and achieves its goal of suicide (i.e., the person under suicide is deadline).</obo:IAO_0000115>
+        <obo:IAO_0000117>Jiahao Wang, Oliver He</obo:IAO_0000117>
+        <rdfs:label>suicide complete</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
