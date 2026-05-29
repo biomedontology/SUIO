@@ -30,12 +30,12 @@
         <dc:creator>Sam Smith</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator>Anthony Huffman</dc:creator>
-        <dc:date xml:lang="en">05-26-2026</dc:date>
+        <dc:date xml:lang="en">05-29-2026</dc:date>
         <dc:description xml:lang="en">SUIO is a biomedical ontology in the domain of suicide.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Human population health</dc:subject>
         <dc:title xml:lang="en">SUIO: Suicide Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.21</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.24</owl:versionInfo>
     </owl:Ontology>
     
 
