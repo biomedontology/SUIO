@@ -2,9 +2,9 @@
 
 Previously named as the Ontology of Human Suicide (OHS), the Suicide Ontology (SUIO) is a biomedical ontology in the domain of sucide.
 
-The Ontology of Human Suicide (OHS) was initiated in 2015 when Dr. Xiaofu Pan and Dr. Shunzhou Deng were visiting scholars in the University of Michigan and working with Dr. Oliver He there. The work was idled for many years. We have resume the suicide ontology development since 2025, and officially changed the name to SUIO: Ontology of Human Suicide on April 28, 2026. 
+The Ontology of Human Suicide (OHS) was initiated in 2015 when Dr. Xiaofu Pan and Dr. Shunzhou Deng were visiting scholars in the University of Michigan and working with Dr. Oliver He there. The work was idled for many years. We have resume the suicide ontology development since 2025, and officially changed the name to SUIO: Suicide Ontology on April 28, 2026. 
 
-Now the OHS research has become part of the NIH-funded PHASES project:  https://github.com/Buffalo-Ontology-Group/phases.  
+Now the SUIO research has become part of the NIH-funded PHASES project:  https://github.com/Buffalo-Ontology-Group/phases.  
 
 ## Developers: 
 
