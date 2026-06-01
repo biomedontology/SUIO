@@ -29,3 +29,15 @@ Now the SUIO research has become part of the NIH-funded PHASES project:  https:/
 - Hollen N. Reischer
 - Julie C. Bowker
 - John Beverly 
+
+## Source:
+
+SUIO ontology source is available in the folder: 
+https://github.com/biomedontology/SUIO/tree/master/ontology. 
+
+The merged SUIO owl file (suio-merged.owl) is available here: 
+https://raw.githubusercontent.com/biomedontology/SUIO/refs/heads/master/ontology/suio-merged.owl 
+
+
+
+
