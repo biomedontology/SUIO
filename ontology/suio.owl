@@ -23,19 +23,19 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/suio/gene-protein.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/suio/gene-sui.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/suio/pheno-gene.owl"/>
-        <dc:creator>Damayanthi (Daughty) Jesudas</dc:creator>
+        <dc:creator>Anthony Huffman</dc:creator>
         <dc:creator>Jie Zheng</dc:creator>
         <dc:creator>John Beverley</dc:creator>
         <dc:creator>Leo Yeh</dc:creator>
         <dc:creator>Sam Smith</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:creator>Anthony Huffman</dc:creator>
-        <dc:date xml:lang="en">05-29-2026</dc:date>
+        <dc:creator>Damayanthi Jesudas</dc:creator>
+        <dc:date xml:lang="en">06-2-2026</dc:date>
         <dc:description xml:lang="en">SUIO is a biomedical ontology in the domain of suicide.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Human population health</dc:subject>
         <dc:title xml:lang="en">SUIO: Suicide Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.24</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -114,6 +114,15 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICO_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="en">risk</rdfs:label>
+    </owl:Class>
     
 
 
@@ -269,6 +278,77 @@
         <obo:IAO_0000115>A general desire to die or not wake up, but without a specific, actionable plan to carry out the death.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Anthony Huffman, Jie Zheng, Leo Yeh</obo:IAO_0000117>
         <rdfs:label xml:lang="en">passive suicidal ideation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="en">risk factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000012"/>
+        <obo:IAO_0000115>Suicide risk factor is a risk factor with a biological, psychological, or environmental characteristic that increases the likelihood that a person will consider, attempt, or die by suicide. A suicide risk factor does not directly cause or predict suicide, but helps identify individuals who may be more vulnerable to suicidal crises.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Sam Smith, Jie Zheng, Leo Yeh</obo:IAO_0000117>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC3130348/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">suicide risk factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115>Protective factor is a disposition that is associated with a decreased probability that a particular disease or disorder will develop in an individual, that reduces the severity of an existing pathological condition, or that mitigates the effects of stress generally.</obo:IAO_0000115>
+        <obo:IAO_0000117>Damayanthi Jesudas, Sam Smith, Jie Zheng, Oliver He, Leo Yeh</obo:IAO_0000117>
+        <obo:IAO_0000119>https://dictionary.apa.org/protective-factor</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">protective factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000014"/>
+        <obo:IAO_0000115>Suicide protective factor is a protective factor of a personal or environmental characteristic that decreases the likelihood of suicidal behavior.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sam Smith, Oliver He, Jie Zheng, Leo Yeh, Damayanthi Jesudas</obo:IAO_0000117>
+        <obo:IAO_0000118>protective factor for suicidal ideation</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC11424721/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">suicide protective factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICO_0000078"/>
+        <obo:IAO_0000115>Suicidality is the risk of suicide, usually indicated by suicidal ideation or intent, especially as evident in the presence of a well-elaborated suicidal plan.</obo:IAO_0000115>
+        <obo:IAO_0000119>Sam Smith, Jie Zheng, Oliver He, Leo Yeh, Damayanthi Jesudas</obo:IAO_0000119>
+        <obo:IAO_0000119>https://anderson.edu/student-life/counseling/suicidality</obo:IAO_0000119>
+        <obo:IAO_0000119>https://dictionary.apa.org/suicidality</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">suicidality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000017"/>
+        <obo:IAO_0000115>Adolescent suicidality is the suicidality in young, which encompasses thoughts of suicide (ideation), planning, and actual attempts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sam Smith, Jie Zheng, Oliver He, Leo Yeh, Damayanthi Jesudas</obo:IAO_0000117>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC11424721/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">adolescent suicidality</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
