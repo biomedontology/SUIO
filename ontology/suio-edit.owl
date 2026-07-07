@@ -31,12 +31,12 @@
         <dc:creator>Leo Yeh</dc:creator>
         <dc:creator>Sam Smith</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date xml:lang="en">06-30-2026</dc:date>
+        <dc:date xml:lang="en">07-07-2026</dc:date>
         <dc:description xml:lang="en">SUIO is a biomedical ontology in the domain of suicide.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Human population health</dc:subject>
         <dc:title xml:lang="en">SUIO: Suicide Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.33</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.35</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -97,6 +97,17 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <obo:IAO_0000115>An object property that represents a relation betwen a genetic variation and a phenotype</obo:IAO_0000115>
         <rdfs:label>genetic variation for susceptibility to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000022 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SUIO_0000022">
+        <obo:IAO_0000112>A suicide process intends to achieve the suicide objective. However, this objective may be completed or failed.</obo:IAO_0000112>
+        <obo:IAO_0000115>An object property that represents a relation between a planned process and its corresponding objective specification.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Oliver He, Leo Yeh, Damayanthi Jesudas</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">intends to achieve objective</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -184,9 +195,26 @@
     <!-- http://purl.obolibrary.org/obo/SUIO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000001">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000022"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000021"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A process that acts intentionally to cause one&apos;s own death.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He, Jianhao Wang, Xiaofu Pan</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Jianhao Wang, Xiaofu Pan, Jie Zheng, Leo Yeh, Damayanthi Jesudas</obo:IAO_0000117>
         <obo:IAO_0000118>suicidal behavior</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Suicide</obo:IAO_0000119>
         <rdfs:label xml:lang="en">suicide</rdfs:label>
