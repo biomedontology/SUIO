@@ -36,7 +36,7 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Human population health</dc:subject>
         <dc:title xml:lang="en">SUIO: Suicide Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.35</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.36</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -149,6 +149,16 @@
     <!-- http://purl.obolibrary.org/obo/NBO_0000515 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000515"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCCO_00000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCCO_00000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115>Disposition in whose realization some organism or group of organisms has or had an interest.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">capability</rdfs:label>
+    </owl:Class>
     
 
 
@@ -424,6 +434,34 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <obo:IAO_0000117>Jie Zheng, Oliver He, Sam Smith, Leo Yeh</obo:IAO_0000117>
         <rdfs:label xml:lang="en">suicide objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:label xml:lang="en">desire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000024"/>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC3130348/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">desire for suicide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCCO_00000011"/>
+        <rdfs:label xml:lang="en">suicide capability</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
