@@ -24,19 +24,22 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/suio/gene-protein.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/suio/gene-sui.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/suio/pheno-gene.owl"/>
+        <dc:creator xml:lang="en">Alex Diehl</dc:creator>
         <dc:creator>Anthony Huffman</dc:creator>
+        <dc:creator>Asiyah Yu Lin</dc:creator>
+        <dc:creator xml:lang="en">Bill Duncan</dc:creator>
         <dc:creator>Damayanthi Jesudas</dc:creator>
         <dc:creator>Jie Zheng</dc:creator>
         <dc:creator>John Beverley</dc:creator>
         <dc:creator>Leo Yeh</dc:creator>
         <dc:creator>Sam Smith</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date xml:lang="en">07-07-2026</dc:date>
+        <dc:date xml:lang="en">08-19-2026</dc:date>
         <dc:description xml:lang="en">SUIO is a biomedical ontology in the domain of suicide.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Human population health</dc:subject>
         <dc:title xml:lang="en">SUIO: Suicide Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.36</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.37</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -78,6 +81,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002411 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002411">
+        <rdfs:label xml:lang="en">causally upstream of</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -205,29 +216,12 @@
     <!-- http://purl.obolibrary.org/obo/SUIO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000001">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000022"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000021"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000022"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000021"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>A process that acts intentionally to cause one&apos;s own death.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Jianhao Wang, Xiaofu Pan, Jie Zheng, Leo Yeh, Damayanthi Jesudas</obo:IAO_0000117>
-        <obo:IAO_0000118>suicidal behavior</obo:IAO_0000118>
+        <obo:IAO_0000118>suicide</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Suicide</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">suicide</rdfs:label>
+        <rdfs:label xml:lang="en">suicidal behavior</rdfs:label>
     </owl:Class>
     
 
@@ -236,9 +230,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000022"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000004"/>
-        <obo:IAO_0000115>A suicide process that is attempted however does not acheive the suicide goal.</obo:IAO_0000115>
-        <obo:IAO_0000117>Jiahao Wang, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A process that acts intentionally to cause one&apos;s own death. It is suicide process that is conducted and achieves its goal of suicide (i.e., the person under suicide is deadline).</obo:IAO_0000115>
+        <obo:IAO_0000115>https://en.wikipedia.org/wiki/Suicide_attempt</obo:IAO_0000115>
+        <obo:IAO_0000117>Jiahao Wang, Oliver He, Alex Diehl, Jie Zheng, Bill Duncan, Asiyah Lin</obo:IAO_0000117>
+        <obo:IAO_0000118>act of suicide</obo:IAO_0000118>
+        <obo:IAO_0000118>committing suicide</obo:IAO_0000118>
         <rdfs:label>suicide attempt</rdfs:label>
     </owl:Class>
     
@@ -247,10 +250,30 @@
     <!-- http://purl.obolibrary.org/obo/SUIO_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000004">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SUIO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000071"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000001"/>
-        <obo:IAO_0000115>A suicide process that is conducted and achieves its goal of suicide (i.e., the person under suicide is deadline).</obo:IAO_0000115>
-        <obo:IAO_0000117>Jiahao Wang, Oliver He</obo:IAO_0000117>
-        <rdfs:label>suicide complete</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A suicide behavior resulting in death of the person attempting suicide.</obo:IAO_0000115>
+        <obo:IAO_0000115>https://en.wikipedia.org/wiki/Suicide</obo:IAO_0000115>
+        <obo:IAO_0000117>Jiahao Wang, Oliver He, Alex Diehl, Jie Zheng, Bill Duncan, Asiyah Lin</obo:IAO_0000117>
+        <obo:IAO_0000118>suicide complete</obo:IAO_0000118>
+        <obo:IAO_0000118>suicide successful</obo:IAO_0000118>
+        <rdfs:label>suicide</rdfs:label>
     </owl:Class>
     
 
@@ -258,7 +281,7 @@
     <!-- http://purl.obolibrary.org/obo/SUIO_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000001"/>
         <obo:IAO_0000115>suicidal ideation is a process that refers to the contemplation, thoughts, or fantasies of ending one&apos;s own life. It exists on a broad spectrum—ranging from fleeting thoughts (&quot;I wish I could disappear&quot;) to highly detailed, active plans. It is not a diagnosis, but rather a warning sign or symptom.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">suicidal ideation</rdfs:label>
@@ -463,9 +486,27 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCCO_00000011"/>
         <rdfs:label xml:lang="en">suicide capability</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
+        <rdfs:label xml:lang="en">death stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">life cycle stage</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
