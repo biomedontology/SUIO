@@ -24,7 +24,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/suio/gene-protein.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/suio/gene-sui.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/suio/pheno-gene.owl"/>
-        <dc:creator xml:lang="en">Alex Diehl</dc:creator>
+        <dc:creator xml:lang="en">Alexander Diehl</dc:creator>
         <dc:creator>Anthony Huffman</dc:creator>
         <dc:creator>Asiyah Yu Lin</dc:creator>
         <dc:creator xml:lang="en">Bill Duncan</dc:creator>
@@ -34,12 +34,12 @@
         <dc:creator>Leo Yeh</dc:creator>
         <dc:creator>Sam Smith</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date xml:lang="en">08-19-2026</dc:date>
+        <dc:date xml:lang="en">09-16-2026</dc:date>
         <dc:description xml:lang="en">SUIO is a biomedical ontology in the domain of suicide.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Human population health</dc:subject>
         <dc:title xml:lang="en">SUIO: Suicide Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.37</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.38</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -217,8 +217,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>A process that acts intentionally to cause one&apos;s own death.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He, Jianhao Wang, Xiaofu Pan, Jie Zheng, Leo Yeh, Damayanthi Jesudas</obo:IAO_0000117>
+        <obo:IAO_0000115>A behavior related to the contemplation of or carrying out of suicide. This can include both cognitive processes or physical action related to suicide.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Jianhao Wang, Xiaofu Pan, Jie Zheng, Leo Yeh, Damayanthi Jesudas, Bill Duncan, Alex Diehl</obo:IAO_0000117>
         <obo:IAO_0000118>suicide</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Suicide</obo:IAO_0000119>
         <rdfs:label xml:lang="en">suicidal behavior</rdfs:label>
@@ -237,11 +237,12 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000004"/>
-        <obo:IAO_0000115>A process that acts intentionally to cause one&apos;s own death. It is suicide process that is conducted and achieves its goal of suicide (i.e., the person under suicide is deadline).</obo:IAO_0000115>
         <obo:IAO_0000115>https://en.wikipedia.org/wiki/Suicide_attempt</obo:IAO_0000115>
-        <obo:IAO_0000117>Jiahao Wang, Oliver He, Alex Diehl, Jie Zheng, Bill Duncan, Asiyah Lin</obo:IAO_0000117>
+        <obo:IAO_0000115>A self-harm behavior that involves the intention to cause one&apos;s own death. It is conducted with the intention of suicide, but generally suicide attempt means no death outcome.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jiahao Wang, Oliver He, Alexander Diehl, Jie Zheng, Bill Duncan, Asiyah Lin</obo:IAO_0000117>
         <obo:IAO_0000118>act of suicide</obo:IAO_0000118>
         <obo:IAO_0000118>committing suicide</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC10096207/</obo:IAO_0000119>
         <rdfs:label>suicide attempt</rdfs:label>
     </owl:Class>
     
@@ -284,6 +285,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000001"/>
         <obo:IAO_0000115>suicidal ideation is a process that refers to the contemplation, thoughts, or fantasies of ending one&apos;s own life. It exists on a broad spectrum—ranging from fleeting thoughts (&quot;I wish I could disappear&quot;) to highly detailed, active plans. It is not a diagnosis, but rather a warning sign or symptom.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC10096207/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">suicidal ideation</rdfs:label>
     </owl:Class>
     
@@ -305,7 +307,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>Suicide management refers to the clinical and practical strategies used to identify, assess, and treat individuals at risk of suicide.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Damayanthi Jesudas</obo:IAO_0000117>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC10096207/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">suicide management</rdfs:label>
     </owl:Class>
     
@@ -461,6 +464,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A suicidal behavior that refers to the formulation of a specific method through which one intends to die</obo:IAO_0000115>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC2576496/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">suicide planning</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SUIO_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000024">
@@ -489,6 +509,41 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000003"/>
+        <obo:IAO_0000115>A suicide attempt that is discontinued due to internnal change of mind.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Leo Yeh, Damayanthi Jesudas, Bill Duncan, Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC10096207/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">aborted suicide attempt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000003"/>
+        <obo:IAO_0000115>A suicide attempt that is stopped due to some external factor.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Leo Yeh, Damayanthi Jesudas, Bill Duncan, Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC10096207/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">interrupted suicide attempt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000001"/>
+        <obo:IAO_0000117>Oliver He, Leo Yeh, Damayanthi Jesudas, Bill Duncan, Alexander Diehl</obo:IAO_0000117>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC10096207/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">suicidal threatening</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000071">
@@ -508,5 +563,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
