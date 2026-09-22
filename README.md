@@ -25,7 +25,7 @@ Now the SUIO research has become part of the NIH-funded PHASES project:  https:/
 
 **University of Florida:**
 
-- B. Damayanthi (Daughty) Jesudas
+- B. Damayanthi Jesudas
 - Bill Duncan
 
 **University at Buffalo:**
