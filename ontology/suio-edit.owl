@@ -34,12 +34,13 @@
         <dc:creator>Leo Yeh</dc:creator>
         <dc:creator>Sam Smith</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date xml:lang="en">09-16-2026</dc:date>
+        <dc:date xml:lang="en">10-14-2026</dc:date>
+        <dc:date>Damayanthi Jesudas</dc:date>
         <dc:description xml:lang="en">SUIO is a biomedical ontology in the domain of suicide.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Human population health</dc:subject>
         <dc:title xml:lang="en">SUIO: Suicide Ontology</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.38</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.39</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -216,7 +217,7 @@
     <!-- http://purl.obolibrary.org/obo/SUIO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000031"/>
         <obo:IAO_0000115>A behavior related to the contemplation of or carrying out of suicide. This can include both cognitive processes or physical action related to suicide.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He, Jianhao Wang, Xiaofu Pan, Jie Zheng, Leo Yeh, Damayanthi Jesudas, Bill Duncan, Alex Diehl</obo:IAO_0000117>
         <obo:IAO_0000118>suicide</obo:IAO_0000118>
@@ -237,8 +238,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000004"/>
-        <obo:IAO_0000115>https://en.wikipedia.org/wiki/Suicide_attempt</obo:IAO_0000115>
         <obo:IAO_0000115>A self-harm behavior that involves the intention to cause one&apos;s own death. It is conducted with the intention of suicide, but generally suicide attempt means no death outcome.</obo:IAO_0000115>
+        <obo:IAO_0000115>https://en.wikipedia.org/wiki/Suicide_attempt</obo:IAO_0000115>
         <obo:IAO_0000117>Jiahao Wang, Oliver He, Alexander Diehl, Jie Zheng, Bill Duncan, Asiyah Lin</obo:IAO_0000117>
         <obo:IAO_0000118>act of suicide</obo:IAO_0000118>
         <obo:IAO_0000118>committing suicide</obo:IAO_0000118>
@@ -284,7 +285,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000001"/>
         <obo:IAO_0000115>suicidal ideation is a process that refers to the contemplation, thoughts, or fantasies of ending one&apos;s own life. It exists on a broad spectrum—ranging from fleeting thoughts (&quot;I wish I could disappear&quot;) to highly detailed, active plans. It is not a diagnosis, but rather a warning sign or symptom.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He, Alex Diehl, Bill Duncan, JIe Zheng, Leo Yeh, Damayanthi Jesudas</obo:IAO_0000117>
         <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC10096207/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">suicidal ideation</rdfs:label>
     </owl:Class>
@@ -536,10 +537,53 @@
     <!-- http://purl.obolibrary.org/obo/SUIO_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000001"/>
-        <obo:IAO_0000117>Oliver He, Leo Yeh, Damayanthi Jesudas, Bill Duncan, Alexander Diehl</obo:IAO_0000117>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000030"/>
+        <obo:IAO_0000115>A suicidal communication process that conveys intent to attempt suicide in near future.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Leo Yeh, Damayanthi Jesudas, Bill Duncan, Alexander Diehl, Asiyah Lin</obo:IAO_0000117>
         <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC10096207/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">suicidal threatening</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000001"/>
+        <obo:IAO_0000115>A suicidal behavior in which a person conveys suicidal thoughts, intent, plans, threats, or other suicide-related content.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Leo Yeh, Damayanthi Jesudas, Bill Duncan, Alexander Diehl, Jie ZHeng, Asiyah Lin</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">suicidal communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A behavior in which a person intentionally causes or risks physical injury to one&apos;s self.</obo:IAO_0000115>
+        <obo:IAO_0000116>Self-injurious behavior (SIB) and self-harm are often used interchangeably in clinical literature, but they carry distinct historical, contextual, and functional nuances.
+
+Self-Harm (Broad / Clinical Umbrella): A general term for any intentional, direct destruction or alteration of body tissue without conscious suicidal intent. In modern psychology, this is most formally categorized as Non-Suicidal Self-Injury (NSSI). Common methods include cutting, scratching, burning, and hitting oneself. Its primary function is emotion regulation, self-punishment, or relief from overwhelming psychological distress. 
+
+Self-Injurious Behavior (SIB): A term historically and predominantly used in the context of developmental disabilities, autism spectrum disorder, or neurodivergent populations (such as severe head-banging, self-biting, or eye-gouging). However, in broader medical and psychiatric literature, SIB is also utilized as a neutral, descriptive classification for any self-inflicted physical damage—sometimes sub-divided into suicidal vs. non-suicidal categories.</obo:IAO_0000116>
+        <obo:IAO_0000117>Asiyah Lin, Sam Smith, Oliver He, Jie Zheng, Leo Yeh, Damayanthi Jesudas, Bill Duncan, Alex Diehl</obo:IAO_0000117>
+        <obo:IAO_0000118>self-harm behavior</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">self-injurious behavior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SUIO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SUIO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SUIO_0000031"/>
+        <obo:IAO_0000115>A behavior in which a person intentionally causes or risks nonsuicidal physical injury to one&apos;s self.</obo:IAO_0000115>
+        <obo:IAO_0000117>Asiyah Lin, Sam Smith, Oliver He, Jie Zheng, Leo Yeh, Damayanthi Jesudas, Bill Duncan, Alex Diehl</obo:IAO_0000117>
+        <obo:IAO_0000118>nonsuicidal self-harm behavior</obo:IAO_0000118>
+        <obo:IAO_0000118>nonsuicidal self-injury</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC4244874/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">nonsuicidal self-injurious behavior</rdfs:label>
     </owl:Class>
     
 
